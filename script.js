@@ -110,10 +110,14 @@ function carregarHome() {
 
     const descricaoMeta = document.getElementById('descricaoMeta')
     const progresso = document.querySelector('.progresso')
+    console.log('mesSelecionado:', mesSelecionado)
+console.log('metas:', dados.metas)
+console.log('meta do mês:', dados.metas[mesSelecionado])
+console.log('progresso:', progresso)
     if (mesSelecionado && dados.metas && dados.metas[mesSelecionado]) {
         const meta = dados.metas[mesSelecionado]
         descricaoMeta.textContent = 'Meta de ' + mesSelecionado + ': Economizar R$ ' + meta.toFixed(2)
-        const porcentagem = Math.min((totalReceitas - totalDespesas) / meta * 100, 100)
+        const porcentagem = Math.min(saldo / meta * 100, 100)
         progresso.style.width = porcentagem + '%'
         progresso.style.transition = 'width 1s ease'
     } else {
