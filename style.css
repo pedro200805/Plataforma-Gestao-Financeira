@@ -88,9 +88,17 @@ nav a.active_page {
     border-radius: 20px;
 }
 
-.saldo { background: #10203d; }
-.receita { background: #0f766e; }
-.despesa { background: #991b1b; }
+.saldo {
+    background: #10203d;
+}
+
+.receita {
+    background: #0f766e;
+}
+
+.despesa {
+    background: #991b1b;
+}
 
 .metas {
     margin-top: 30px;
@@ -135,7 +143,7 @@ nav a.active_page {
 
 .nubank,
 .Nubank {
-    background: linear-gradient(135deg,  #10203d, #729bdd);
+    background: linear-gradient(135deg, #10203d, #729bdd);
 }
 
 
@@ -156,8 +164,13 @@ nav a.active_page {
     position: relative;
 }
 
-.roxo { background: linear-gradient(135deg,  #10203d, #729bdd); }
-.preto { background: linear-gradient(135deg,  #10203d, #729bdd); }
+.roxo {
+    background: linear-gradient(135deg, #10203d, #729bdd);
+}
+
+.preto {
+    background: linear-gradient(135deg, #10203d, #729bdd);
+}
 
 .btn-apagar-cartao {
     position: absolute;
@@ -240,8 +253,13 @@ nav a.active_page {
     gap: 10px;
 }
 
-.receita-item { border-left: 5px solid #10b981; }
-.despesa-item { border-left: 5px solid #ef4444; }
+.receita-item {
+    border-left: 5px solid #10b981;
+}
+
+.despesa-item {
+    border-left: 5px solid #ef4444;
+}
 
 /* ===== RELATÓRIOS ===== */
 
@@ -278,7 +296,8 @@ table {
     border-collapse: collapse;
 }
 
-th, td {
+th,
+td {
     padding: 15px;
     text-align: left;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
@@ -400,7 +419,8 @@ th, td {
         flex-direction: column;
     }
 
-    th, td {
+    th,
+    td {
         padding: 10px;
         font-size: 13px;
     }
